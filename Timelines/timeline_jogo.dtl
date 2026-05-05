@@ -1,0 +1,435 @@
+[background arg="res://Assets/fundo arca estacao.png" fade="0.0"]
+O mundo… já não é mais como antes.
+As antigas cidades desapareceram…\
+e no lugar delas restaram apenas ruínas.
+Agora, os sobreviventes são mutantes…\
+vivendo em uma comunidade chamada Arca.
+No centro da Arca, há uma figura essencial\: O Ancião.
+O único ainda completamente humano…\
+aquele que cuidou dos mutantes desde o início…\
+e que guarda os últimos fragmentos do mundo antigo.
+Lá fora… existe a Zona. Um lugar de descobertas…\
+e novos desafios.
+Entre aqueles que exploram esse mundo…\
+estão três membros da Gangue das Serpentes\:
+Lyra…\
+Nestor…\
+Arabella…
+E agora… a pedido do Ancião…
+eles estão prestes a enfrentar\
+a missão mais importante de suas vidas...
+[background arg="res://Assets/fundo preto arca.png" fade="0.0"]
+nestor: ...ugh...\
+Minha cabeça...
+nestor: Espera, onde é que eu tô?
+arabella: ...Nestor...? \
+É você mesmo?
+nestor: Arabella...? Você tá aqui?
+arabella: Sou eu, sim!\
+Mas... você consegue ver alguma coisa? Eu não enxergo nada...
+nestor: Não... tá tudo escuro.\
+E... estranho... eu não lembro de nada antes de acordar.\
+Nem como a gente veio parar nesse lugar...
+(pausa dramática)
+nestor: Seria bom se a Lyra tivesse aqui...
+lyra: ... mas eu tô.
+arabella: AAH!\
+Lyra?!
+nestor: Você tava aí esse tempo todo?!
+arabella: Anda logo, criatura, ilumina isso aqui!
+lyra: Ah... desculpa...\
+Eu não me toquei...
+(Lyra usa seus poderes de luminosidade. De repente...)
+audio "res://Assets/faaah.mp3"
+[background arg="res://Assets/fundo arca 2.png" fade="0.0"]
+(Os três finalmente conseguem se enxergar, e o ambiente em que estão. Uma área comum da Arca)
+join nestor center
+nestor (Pensativo): ....hm.\
+Isso parece...
+(Nestor olha ao redor, atento)
+nestor (Neutro): A gente ainda tá na Arca?
+(outra pausa dramática)
+nestor (Pensativo): Espera.
+nestor (Neutro): ...Miltom?
+nestor (Surpreso): MILTOM?!\
+DESDE QUANDO VOCÊ TÁ AQUI?!
+leave nestor
+join milton center
+milton (Feliz): ...Olá, amigos.\
+Estava esperando vocês despertarem.
+leave milton
+join arabella center
+arabella (Pensativo): Não, pera.
+arabella (Desconfortável): Você tava aqui... parado...\
+numa sala escura...\
+com três pessoas desacordadas...\
+esperando?
+leave arabella
+join milton center
+milton (Envergonhado): ...prefiro não entrar em detalhes.
+milton (Neutro): O Ancião me encarregou de aplicar um pequeno teste em vocês.
+leave milton
+join nestor center
+nestor (Preocupado): ...claro.\
+O velho finalmente perdeu o juízo.
+leave nestor
+join lyra (Desconfortável) center
+lyra (Desconfortável): Você tá falando sério?\
+Ele mandou você prender a gente aqui só pra isso?
+leave lyra
+join milton center
+milton (Neutro): Exatamente.
+milton (Feliz): Respondam as perguntas corretamente, e a porta será aberta.
+leave milton
+join arabella center
+arabella (Desconfortável): ...tanto faz, né.\
+Quando mais cedo começar, antes a gente sai daqui.\
+Qual é a primeira pergunta?
+leave arabella
+join milton center
+milton (Feliz): Perfeito! A primeira pergunta é\:
+milton (Explicando): Para coletar recursos, existem\:\
+- 2 áreas próximas\
+- 3 áreas mais distantes\
+Escolhendo apenas uma área, quantas opções existem?
+- A) 5
+	milton: Resposta correta!
+- B) 6
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 áreas próximas e 3 áreas distantes.\
+	Como escolhemos apenas uma, somamos\:\
+	2 + 3 = 5.\
+	Então, existem 5 opções possíveis.
+	milton: Portanto, a alternativa certa era A).
+- C) 3
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 áreas próximas e 3 áreas distantes.\
+	Como escolhemos apenas uma, somamos\:\
+	2 + 3 = 5.\
+	Então, existem 5 opções possíveis.
+	milton: Portanto, a alternativa certa era A).
+- D) 2
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 áreas próximas e 3 áreas distantes.\
+	Como escolhemos apenas uma, somamos\:\
+	2 + 3 = 5.\
+	Então, existem 5 opções possíveis.
+	milton: Portanto, a alternativa certa era A).
+milton: Próxima pergunta\:
+milton (Explicando): Um explorador da Zona leva\:\
+- 4 tipos de ferramentas\
+- 3 tipos de suprimentos\
+Quantas combinações diferentes ele pode montar?
+- A) 7
+	milton: Resposta incorreta!
+	milton (Explicando): Para cada ferramenta, existem 3 opções de suprimento.\
+	Como são 4 ferramentas…\
+	multiplicamos\: 4 × 3 = 12.\
+	Então, existem 12 combinações possíveis.
+	milton: Portanto, a alternativa certa era B).
+- B) 12
+	milton: Resposta Correta!
+- C) 4
+	milton: Resposta incorreta!
+	milton (Explicando): Para cada ferramenta, existem 3 opções de suprimento.\
+	Como são 4 ferramentas…\
+	multiplicamos\: 4 × 3 = 12.\
+	Então, existem 12 combinações possíveis.
+	milton: Portanto, a alternativa certa era B).
+- D) 3
+	milton: Resposta incorreta!
+	milton (Explicando): Para cada ferramenta, existem 3 opções de suprimento.\
+	Como são 4 ferramentas…\
+	multiplicamos\: 4 × 3 = 12.\
+	Então, existem 12 combinações possíveis.
+	milton: Portanto, a alternativa certa era B).
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Na Arca, você pode buscar informações\:\
+- com 2 exploradores experientes\
+- ou com o Ancião\
+Quantas opções diferentes existem?
+- A) 4
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 exploradores e 1 Ancião.\
+	Como escolhemos apenas uma opção, somamos\:\
+	2 + 1 = 3.\
+	Então, existem 3 opções possíveis.
+	milton (Neutro): Portanto, a alternativa certa era D).
+- B) 2
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 exploradores e 1 Ancião.\
+	Como escolhemos apenas uma opção, somamos\:\
+	2 + 1 = 3.\
+	Então, existem 3 opções possíveis.
+	milton (Neutro): Portanto, a alternativa certa era D).
+- C) 1
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 exploradores e 1 Ancião.\
+	Como escolhemos apenas uma opção, somamos\:\
+	2 + 1 = 3.\
+	Então, existem 3 opções possíveis.
+	milton (Neutro): Portanto, a alternativa certa era D).
+- D) 3
+	milton (Neutro): Resposta correta!
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Na Arca, existem 5 compartimentos, mas 6 exploradores precisam descansar.\
+O que podemos afirmar com certeza?
+- A) Pelo menos um compartimento terá 2 ou mais exploradores
+	milton (Neutro): Resposta correta!
+- B) Todos os compartimentos terão exatamente 1 explorador
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 5 compartimentos e 6 exploradores.\
+	Como há mais exploradores do que compartimentos, alguém vai ter que dividir.\
+	Pelo princípio da casa dos pombos\:\
+	sempre haverá um compartimento com pelo menos 2 exploradores.
+	milton (Neutro): Portanto, a alternativa certa era A).
+- C) Nenhum compartimento será utilizado
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 5 compartimentos e 6 exploradores.\
+	Como há mais exploradores do que compartimentos, alguém vai ter que dividir.\
+	Pelo princípio da casa dos pombos\:\
+	sempre haverá um compartimento com pelo menos 2 exploradores.
+	milton (Neutro): Portanto, a alternativa certa era A).
+- D) Cada compartimento terá no máximo 1 explorador
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 5 compartimentos e 6 exploradores.\
+	Como há mais exploradores do que compartimentos, alguém vai ter que dividir.\
+	Pelo princípio da casa dos pombos\:\
+	sempre haverá um compartimento com pelo menos 2 exploradores.
+	milton (Neutro): Portanto, a alternativa certa era A).
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Para sair em missão, um grupo escolhe\:\
+- 2 rotas\
+- 3 horários possíveis\
+Quantas combinações diferentes existem?
+- A) 5
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 rotas e 3 horários possíveis. \
+	Para cada rota, podemos escolher 3 horários.\
+	Então multiplicamos\:\
+	2 × 3 = 6.\
+	Logo, existem 6 combinações possíveis.
+	milton (Neutro): Portanto, a alternativa certa era B).
+- B) 6
+	milton (Neutro): Resposta correta!
+- C) 3
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 rotas e 3 horários possíveis. \
+	Para cada rota, podemos escolher 3 horários.\
+	Então multiplicamos\:\
+	2 × 3 = 6.\
+	Logo, existem 6 combinações possíveis.
+	milton (Neutro): Portanto, a alternativa certa era B).
+- D) 2
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 2 rotas e 3 horários possíveis. \
+	Para cada rota, podemos escolher 3 horários.\
+	Então multiplicamos\:\
+	2 × 3 = 6.\
+	Logo, existem 6 combinações possíveis.
+	milton (Neutro): Portanto, a alternativa certa era B).
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Durante um turno, 9 missões foram atribuídas para apenas 4 equipes.\
+O que podemos afirmar com certeza?
+- A) Cada equipe recebeu exatamente 2 missões
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 9 missões e 4 equipes.\
+	Dividindo\: 9 ÷ 4 = 2 e sobra.\
+	Isso significa que nem todas podem ter só 2 missões.\
+	Então, pelo menos uma equipe terá 3 ou mais missões.
+	milton (Neutro): Portanto, a alternativa certa era C).
+- B) Todas as equipes receberam a mesma quantidade
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 9 missões e 4 equipes.\
+	Dividindo\: 9 ÷ 4 = 2 e sobra.\
+	Isso significa que nem todas podem ter só 2 missões.\
+	Então, pelo menos uma equipe terá 3 ou mais missões.
+	milton (Neutro): Portanto, a alternativa certa era C).
+- C) Pelo menos uma equipe recebeu 3 ou mais missões
+	milton (Neutro): Resposta correta!
+- D) Nenhuma equipe recebeu mais de 2 missões
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 9 missões e 4 equipes.\
+	Dividindo\: 9 ÷ 4 = 2 e sobra.\
+	Isso significa que nem todas podem ter só 2 missões.\
+	Então, pelo menos uma equipe terá 3 ou mais missões.
+	milton (Neutro): Portanto, a alternativa certa era C).
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Para sair da Arca, um explorador precisa escolher\:\
+- 3 tipos de traje\
+- 2 tipos de capacete\
+- 4 tipos de botas\
+Quantas combinações diferentes de equipamentos ele pode montar?
+- A) 9
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 3 tipos de traje, 2 de capacete e 4 de botas.\
+	Para cada traje, há 2 escolhas de capacete e 4 de botas.\
+	Então multiplicamos\:\
+	3 × 2 × 4 = 24.\
+	Logo, existem 24 combinações possíveis.
+	milton (Neutro): Portanto, a alternativa certa era C).
+- B) 12
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 3 tipos de traje, 2 de capacete e 4 de botas.\
+	Para cada traje, há 2 escolhas de capacete e 4 de botas.\
+	Então multiplicamos\:\
+	3 × 2 × 4 = 24.\
+	Logo, existem 24 combinações possíveis.
+	milton (Neutro): Portanto, a alternativa certa era C).
+- C) 24
+	milton (Neutro): Resposta correta!
+- D) 10
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 3 tipos de traje, 2 de capacete e 4 de botas.\
+	Para cada traje, há 2 escolhas de capacete e 4 de botas.\
+	Então multiplicamos\:\
+	3 × 2 × 4 = 24.\
+	Logo, existem 24 combinações possíveis.
+	milton (Neutro): Portanto, a alternativa certa era C).
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Um explorador pode\:\
+- Vasculhar 3 áreas abandonadas\
+- ou investigar 2 setores da Arca\
+Escolhendo apenas uma dessas opções, quantas possibilidades existem?
+- A) 2
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 3 áreas abandonadas ou 2 setores da Arca.\
+	Como escolhemos apenas uma opção, somamos\:\
+	3 + 2 = 5.\
+	Logo, existem 5 possibilidades.
+	milton (Neutro): Portanto, a alternativa certa era D).
+- B) 6
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 3 áreas abandonadas ou 2 setores da Arca.\
+	Como escolhemos apenas uma opção, somamos\:\
+	3 + 2 = 5.\
+	Logo, existem 5 possibilidades.
+	milton (Neutro): Portanto, a alternativa certa era D).
+- C) 3
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 3 áreas abandonadas ou 2 setores da Arca.\
+	Como escolhemos apenas uma opção, somamos\:\
+	3 + 2 = 5.\
+	Logo, existem 5 possibilidades.
+	milton (Neutro): Portanto, a alternativa certa era D).
+- D) 5
+	milton (Neutro): Resposta correta!
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Em um setor da Arca, existem 7 caixas para armazenar suprimentos, mas 8 pacotes foram guardados.\
+O que podemos afirmar com certeza?
+- A) Pelo menos uma caixa terá 2 ou mais pacotes
+	milton (Neutro): Resposta correta!
+- B) Cada caixa terá exatamente 1 pacote
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 7 caixas e 8 pacotes.\
+	Como há mais pacotes do que caixas, algum lugar vai repetir.\
+	Pelo princípio da casa dos pombos\:\
+	pelo menos uma caixa terá 2 ou mais pacotes.
+	Portanto, a alternativa certa era A).
+- C) Nenhuma caixa será utilizada
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 7 caixas e 8 pacotes.\
+	Como há mais pacotes do que caixas, algum lugar vai repetir.\
+	Pelo princípio da casa dos pombos\:\
+	pelo menos uma caixa terá 2 ou mais pacotes.
+	milton (Neutro): Portanto, a alternativa certa era A).
+- D) Todas as caixas terão a mesma quantidade de pacotes
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Existem 7 caixas e 8 pacotes.\
+	Como há mais pacotes do que caixas, algum lugar vai repetir.\
+	Pelo princípio da casa dos pombos\:\
+	pelo menos uma caixa terá 2 ou mais pacotes.
+	milton (Neutro): Portanto, a alternativa certa era A).
+milton (Neutro): Próxima pergunta\:
+milton (Explicando): Um grupo sai da Arca com\:\
+- 2 escolhas de rota entre 4 possíveis\
+- e 3 tipos de equipamento entre 5 disponíveis\
+Quantas combinações possíveis existem? (ordem não importa)
+- A) 20
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Primeiro… vamos olhar as rotas.\
+	Temos 4 rotas, e precisamos escolher 2.
+	milton (Neutro): As combinações possíveis são\:\
+	(1 e 2), (1 e 3), (1 e 4), (2 e 3), (2 e 4), (3 e 4).\
+	Ou seja… existem 6 formas de escolher as rotas.
+	milton (Explicando): Agora... vamos ver os suprimentos. \
+	Temos 5 opções. Vamos chamar eles de\:\
+	A, B, C, D e E.\
+	Precisamos escolher 3 deles, e a ordem não importa.
+	milton (Neutro): Vamos montar as combinações…\
+	(A, B, C), (A, B, D), (A, B, E), (A, C, D), (A, C, E), (A, D, E),\
+	(B, C, D), (B, C, E), (B, D, E), (C, D, E).\
+	Contando tudo… temos 10 combinações.
+	milton (Explicando): Por fim… juntamos tudo. Para cada escolha de rotas,\
+	existem 10 escolhas de suprimentos.\
+	Então multiplicamos\:\
+	6 × 10 = 60.
+	milton (Neutro): Logo… existem 60 combinações possíveis.\
+	O que corresponde à letra B)
+- B) 60
+	milton (Neutro): Resposta correta!
+- C) 120
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Primeiro… vamos olhar as rotas.\
+	Temos 4 rotas, e precisamos escolher 2.
+	milton (Neutro): As combinações possíveis são\:\
+	(1 e 2), (1 e 3), (1 e 4), (2 e 3), (2 e 4), (3 e 4).\
+	Ou seja… existem 6 formas de escolher as rotas.
+	milton (Explicando): Agora... vamos ver os suprimentos. \
+	Temos 5 opções. Vamos chamar eles de\:\
+	A, B, C, D e E.\
+	Precisamos escolher 3 deles, e a ordem não importa.
+	milton (Neutro): Vamos montar as combinações…\
+	(A, B, C), (A, B, D), (A, B, E), (A, C, D), (A, C, E), (A, D, E),\
+	(B, C, D), (B, C, E), (B, D, E), (C, D, E).\
+	Contando tudo… temos 10 combinações.
+	milton (Explicando): Por fim… juntamos tudo. Para cada escolha de rotas,\
+	existem 10 escolhas de suprimentos.\
+	Então multiplicamos\:\
+	6 × 10 = 60.
+	milton (Neutro): Logo… existem 60 combinações possíveis.\
+	O que corresponde à letra B)
+- D) 10
+	milton (Neutro): Resposta incorreta!
+	milton (Explicando): Primeiro… vamos olhar as rotas.\
+	Temos 4 rotas, e precisamos escolher 2.
+	milton (Neutro): As combinações possíveis são\:\
+	(1 e 2), (1 e 3), (1 e 4), (2 e 3), (2 e 4), (3 e 4).\
+	Ou seja… existem 6 formas de escolher as rotas.
+	milton (Explicando): Agora... vamos ver os suprimentos. \
+	Temos 5 opções. Vamos chamar eles de\:\
+	A, B, C, D e E.\
+	Precisamos escolher 3 deles, e a ordem não importa.
+	milton (Neutro): Vamos montar as combinações…\
+	(A, B, C), (A, B, D), (A, B, E), (A, C, D), (A, C, E), (A, D, E),\
+	(B, C, D), (B, C, E), (B, D, E), (C, D, E).\
+	Contando tudo… temos 10 combinações.
+	milton (Explicando): Por fim… juntamos tudo. Para cada escolha de rotas,\
+	existem 10 escolhas de suprimentos.\
+	Então multiplicamos\:\
+	6 × 10 = 60.
+	milton (Neutro): Logo… existem 60 combinações possíveis.\
+	O que corresponde à letra B)
+milton (Neutro): Parabéns.\
+Vocês concluíram o teste.
+leave milton
+join lyra (Pensativo) center
+lyra (Falando): Ah, foi interessante!
+leave lyra
+join milton (Explicando) center
+milton (Explicando): Chamam isso de “quiz”.\
+Era exatamente o que vocês estavam fazendo.
+leave milton
+join nestor (Pensativo) center
+nestor (Pensativo): ...isso não fez o menor sentido.
+leave nestor
+join milton (Neutro) center
+milton (Neutro): Ainda assim, espero que tenham aprendido algo.
+(vira-se para a porta)
+milton (Explicando): Classe liberada.
+leave milton
+join arabella (Desconfortável) center
+arabella (Desconfortável): ...“classe”?
+(olha pros outros)
+arabella (Desconfortável): Tá.\
+Eu nem vou perguntar.
