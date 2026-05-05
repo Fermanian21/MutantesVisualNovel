@@ -1,0 +1,292 @@
+[background arg="res://Assets/fundo preto arca.png" fade="0.0"]
+nestor: ...ugh...\
+Minha cabeça...
+nestor: Espera, onde é que eu tô?
+arabella: ...Nestor...? \
+É você mesmo?
+nestor: Arabella...? Você tá aqui?
+arabella: Sou eu, sim!\
+Mas... você consegue ver alguma coisa? Eu não enxergo nada...
+nestor: Não... tá tudo escuro.\
+E... estranho... eu não lembro de nada antes de acordar.\
+Nem como a gente veio parar nesse lugar...
+[i](pausa dramática)[/i]
+nestor: Seria bom se a Lyra tivesse aqui...
+lyra: ... mas eu tô.
+arabella: AAH!\
+Lyra?!
+nestor: Você tava aí esse tempo todo?!
+arabella: Anda logo, criatura, ilumina isso aqui!
+lyra: Ah... desculpa...\
+Eu não me toquei...
+[i](Lyra usa seus poderes de luminosidade... e de repente...)[/i]
+audio "res://Assets/faaah.mp3"
+[background arg="res://Assets/fundo arca 2.png" fade="0.0"]
+[i](os três finalmente conseguem se enxergar, e o ambiente em que estão. uma área comum da Arca)[/i]
+join nestor center
+nestor (Pensativo): ....hm.\
+Isso parece...
+[i](olha ao redor, atento)[/i]
+nestor (Neutro): A gente ainda tá na Arca?
+[i](outra pausa dramática)[/i]
+nestor (Pensativo): Espera.
+nestor (Neutro): ...Miltom?
+nestor (Surpreso): MILTOM?!\
+DESDE QUANDO VOCÊ TÁ AQUI?!
+leave nestor
+join milton center
+milton (Feliz): ...Olá, amigos.\
+Estava esperando vocês despertarem.
+leave milton
+join arabella center
+arabella (Pensativo): Não, pera.
+arabella (Confusa): Você tava aqui... parado...\
+numa sala escura...\
+com três pessoas desacordadas...\
+esperando?
+leave arabella
+join milton center
+milton (Envergonhado): ...prefiro não entrar em detalhes.
+milton (Neutro): O Ancião me encarregou de aplicar um pequeno teste em vocês.
+leave milton
+join nestor center
+nestor (Preocupado): ...claro.\
+O velho finalmente perdeu o juízo.
+leave nestor
+join lyra (Desconfortável) center
+lyra (Desconfortável): Você tá falando sério?\
+Ele mandou você prender a gente aqui só pra isso?
+leave lyra
+join milton center
+milton (Neutro): Exatamente.
+milton (Explicando): Este teste será dividido em [b]três fases[/b]. Cada uma com um nível de dificuldade diferente\:\
+[b]Fácil[/b]...\
+[b]Médio[/b]...\
+e [b]Difícil[/b].
+milton (Neutro): Em cada fase, vocês deverão responder [b]cinco[/b] perguntas.\
+Para avançar, será necessário acertar [b]pelo menos três[/b].
+milton (Explicando): Vocês estão agora na primeira fase.\
+Dificuldade\: [b]Fácil[/b].
+milton (Neutro): Este teste avalia seus conhecimentos em...\
+[b]princípios da contagem[/b].
+leave milton
+join milton (Explicando) center
+milton (Explicando): Nesta primeira etapa, vocês lidarão com situações mais simples...\
+Envolvendo os princíipios da [b]adição[/b] e da [b]subtração[/b].
+milton (Neutro): Respondam as perguntas corretamente, e a porta será aberta para a próxima fase.
+leave milton
+join arabella (Neutro) center
+arabella (Neutro): ...tanto faz, né.\
+Quando mais cedo começar, antes a gente sai daqui.\
+Qual é a primeira pergunta?
+leave arabella
+join milton (Neutro) center
+milton (Neutro): Perfeito! A primeira pergunta é\:
+milton (Explicando): Sua equipe tinha 10 garrafas de água limpa.\
+Foram encontradas mais 8 perto de um abrigo antigo, mas perdeu 3 durante a fuga.\
+\
+Quantas garrafas restaram?
+leave milton
+set {answer} = false
+- A) 13
+	milton: Resposta incorreta!
+- B) 18
+	milton (Neutro): Resposta incorreta!
+- C) 15
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- D) 11
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): A equipe tinha 10 garrafas e encontrou mais 8.\
+	Depois perdeu 3.
+	milton (Neutro): Então fazemos\:\
+	10 + 8 − 3 = 15.\
+	Logo, restaram 15 garrafas.
+	milton (Explicando): Portanto, a alternativa correta era [b]C) 15[/b].
+join milton (Neutro) center
+milton (Neutro): Segunda pergunta\:
+milton (Explicando): Existem 11 ameaças possíveis na Arca.\
+O grupo resolveu 3, mas surgiram mais 4 na Zona.\
+\
+Quantas ameaças ainda existem?
+leave milton
+set {answer} = false
+- A) 15
+	milton (Neutro): Resposta incorreta!
+- B) 8
+	Resposta incorreta!
+- C) 10
+	Resposta incorreta!
+- D) 12
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existiam 11 ameaças.\
+	3 foram resolvidas e depois surgiram mais 4.
+	milton (Neutro): Então fazemos\:\
+	11 − 3 + 4 = 12.\
+	Logo, existem 12 ameaças.
+	milton (Explicando): Portanto, a alternativa correta era [b]D) 12[/b].
+join milton (Neutro) center
+milton (Neutro): Terceira pergunta\:
+milton (Explicando): Um grupo carregava 20 rações de grude.\
+Comeu 6 durante a viagem e depois encontrou mais 4 em uma caixa velha.\
+\
+Quantas rações tem agora?
+leave milton
+set {answer} = false
+- A) 18
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- B) 16
+	milton (Neutro): Resposta incorreta!
+- C) 20
+	milton (Neutro): Resposta incorreta!
+- D) 14
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): O grupo tinha 20 rações e consumiu 6.\
+	Depois encontrou mais 4.
+	milton (Neutro): Então fazemos\:\
+	20 − 6 + 4 = 18.\
+	Logo, agora possuem 18 rações.
+	milton (Explicando): Portanto, a alternativa correta era [b]A) 18[/b].
+join milton (Neutro) center
+milton (Neutro): Quarta pergunta\:
+milton (Explicando): Durante uma Assembleia, o Povo separou 14 peças para um projeto da Arca.\
+Depois trouxe mais 7 peças, mas 5 estavam quebradas.\
+\
+Quantas peças úteis ficaram?
+leave milton
+set {answer} = false
+- A) 21
+	milton (Neutro): Resposta incorreta!
+- B) 19
+	milton (Neutro): Resposta incorreta!
+- C) 14
+	milton (Neutro): Resposta incorreta!
+- D) 16
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Foram separadas 14 peças e depois trouxeram mais 7.\
+	Mas 5 não serviam.
+	milton (Neutro): Então fazemos\:\
+	14 + 7 − 5 = 16.\
+	Logo, ficaram 16 peças úteis.
+	milton (Explicando): Portanto, a alternativa correta era [b]D) 16[/b].
+join milton (Neutro) center
+milton (Neutro): Quinta pergunta!
+milton (Explicando): Um Mutante saiu para a Zona com 18 balas.\
+Encontrou mais 6 em uma ruína, mas gastou 9 fugindo de uma ameaça.\
+\
+Quantas balas sobraram?
+leave milton
+set {answer} = false
+- A) 12
+	milton (Neutro): Resposta incorreta!
+- B) 15
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- C) 9
+	milton (Neutro): Resposta incorreta!
+- D) 13
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): O Mutante tinha 18 balas e encontrou mais 6.\
+	Depois gastou 9.
+	milton (Neutro): Então fazemos\:\
+	18 + 6 − 9 = 15.\
+	Logo, sobraram 15 balas.
+	milton (Explicando): Portanto, a alternativa correta era [b]B) 15[/b].
+milton (Neutro): Fim das perguntas!\
+\
+A pontuação de vocês foi...
+milton (Explicando): {points}/5
+if {points} >= 3:
+	milton (Neutro): Parabéns!\
+	Vocês atingiram a pontuação necessária.
+	leave milton
+	join lyra (Falando) center
+	lyra (Falando): SÉRIO?! Ainda bem!
+	leave lyra
+	join arabella (Pensativo) center
+	arabella (Pensativo): ...até que não foi tão ruim.
+	leave 
+	join nestor (Neutro) center
+	nestor (Neutro): Que bom... achei que a gente não ia conseguir.
+	leave nestor
+	join milton (Neutro) center
+	milton (Explicando): Parabéns.\
+	Vocês demonstraram atingiram o seu objetivo.
+	milton (Neutro): [i](ele se aproxima de um painel na parede)[/i]
+	milton (Explicando): Como prometido...\
+	\
+	[i](ele se aproxima de um painel na parede)[/i]
+	audio "res://Assets/beep_1.mp3"
+	[i](começa a digitar um código)[/i]
+	join lyra (Pensativo) center
+	lyra (Pensativo): Você sempre teve esse painel aí ou—
+	leave lyra
+	audio "res://Assets/scp-door-opening.mp3"
+	[i](a porta se abre lentamente)[/i]
+	join milton (Explicando) center
+	milton (Explicando): Acesso liberado.\
+	Sigam para a próxima fase.
+	leave milton
+	join nestor (Surpreso) center
+	nestor (Surpreso): ...ok, isso foi meio dramático.
+	leave nestor
+	join arabella (Confusa) center
+	arabella (Pensativo): Então, né...\
+	Bom, é melhor seguir em frente logo.
+	leave arabella
+	jump timeline_moderate/
+milton (Neutro): Poxa... que pena.\
+Vocês não atingiram a pontuação necessária para avançar.
+leave milton
+join arabella (Confusa) center
+arabella (Confusa): ...ah.\
+Sério?
+leave arabella
+join nestor (Surpreso) center
+nestor (Surpreso): Tá de brincadeira.
+leave nestor
+join lyra (Surpreso) center
+lyra (Surpreso): Então...\
+o que acontece agora?
+leave lyra
+[i](silêncio)[/i]
+join nestor (Preocupado) center
+nestor (Preocupado): ...Milton?
+leave nestor
+join milton (Neutro) center
+milton (Neutro): Agora... nós continuamos aqui.
+leave milton
+join arabella (Assustada) center
+arabella (Assustada): ...O QUE?¹
+leave arabella
+join milton (Explicando) center
+milton (Explicando): As regras foram claras.\
+Sem pontuação suficiente, a porta não será aberta.
+leave milton
+join nestor (Neutro) center
+nestor (Neutro): Tá, e quanto tempo isso dura?
+leave nestor
+join milton (Neutro) center
+milton (Neutro): ...indeterminado.
+leave milton
+[i](silêncio constrangedor)[/i]
+join lyra center
+lyra (Desconfortável): Poxa... se o Haco estivesse aqui...

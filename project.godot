@@ -28,8 +28,10 @@ directories/dch_directory={
 "nestor": "res://Characters/nestor.dch"
 }
 directories/dtl_directory={
-"timeline1": "res://Timelines/timeline1.dtl",
-"timeline_jogo": "res://Timelines/timeline_jogo.dtl"
+"timeline_hard": "res://Timelines/timeline_hard.dtl",
+"timeline_intro": "res://Timelines/timeline_intro.dtl",
+"timeline_jogo": "res://Timelines/timeline_easy.dtl",
+"timeline_moderate": "res://Timelines/timeline_moderate.dtl"
 }
 layout/style_directory={
 "": "res://Styles/visual_novel_style.tres",
@@ -70,7 +72,10 @@ audio/channel_defaults={
 }
 layout/style_list=["res://Styles/visual_novel_style.tres"]
 layout/default_style="res://Styles/visual_novel_style.tres"
-variables={}
+variables={
+"answer": "a",
+"points": 0
+}
 
 [editor_plugins]
 

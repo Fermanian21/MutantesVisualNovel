@@ -1,0 +1,179 @@
+[background fade="0.0"]
+join milton (Neutro) center
+milton (Neutro): Certo, agora chegamos na terceira e última fase.\
+Lembrando que, aqui, o nível de dificuldade é [b]Difícil[/b]
+milton (Explicando): As próximas questões serão sobre o
+leave milton
+join lyra (Falando) center
+lyra (Falando): ...bom...\
+se a gente já chegou até aqui...\
+a gente consegue terminar.
+leave lyra
+join milton (Explicando) center
+milton (Explicando): Esse é o espírito!\
+Então, vamos começar...
+milton (Neutro): Primeira pergunta\:
+milton (Explicando): <Empty Text Event>
+leave milton
+set {answer} = false
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+if {} != true:
+	join milton (Explicando) center
+	milton (Explicando): <Empty Text Event>
+	milton (Neutro): <Empty Text Event>
+	milton (Explicando): <Empty Text Event>
+join milton (Neutro) center
+milton (Neutro): Segunda pergunta\:
+milton (Explicando): <Empty Text Event>
+leave milton
+set {answer} = false
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+if {} != true:
+	milton (Explicando): <Empty Text Event>
+	milton (Neutro): <Empty Text Event>
+	milton (Explicando): <Empty Text Event>
+join milton (Neutro) center
+milton (Neutro): Terceira pergunta\:
+milton (Explicando): <Empty Text Event>
+leave milton
+set {answer} = false
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+if {} != true:
+	milton (Explicando): <Empty Text Event>
+	milton (Neutro): <Empty Text Event>
+	milton (Explicando): <Empty Text Event>
+join milton (Neutro) center
+milton (Neutro): Quarta pergunta\:
+milton (Explicando): <Empty Text Event>
+leave milton
+set {answer} = false
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+if {} != true:
+	milton (Explicando): <Empty Text Event>
+	milton (Neutro): <Empty Text Event>
+	milton (Explicando): <Empty Text Event>
+join milton (Neutro) center
+milton (Neutro): Quinta pergunta\:
+milton (Explicando): <Empty Text Event>
+leave milton
+set {answer} = false
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+- 
+	<Empty Text Event>
+if {} != true:
+	milton (Explicando): <Empty Text Event>
+	milton (Neutro): <Empty Text Event>
+	milton (Explicando): <Empty Text Event>
+milton (Neutro): Fim das perguntas!\\
+\\
+A pontuação de vocês foi...
+milton (Explicando): {points}/5
+if {points} >= 3:
+	milton (Neutro): Parabéns!\\
+	Vocês atingiram a pontuação necessária.
+	leave milton
+	join lyra (Falando) center
+	lyra (Falando): SÉRIO?! Ainda bem!
+	leave lyra
+	join arabella (Pensativo) center
+	arabella (Pensativo): ...até que não foi tão ruim.
+	leave 
+	join nestor (Neutro) center
+	nestor (Neutro): Que bom... achei que a gente não ia conseguir.
+	leave nestor
+	join milton (Neutro) center
+	milton (Explicando): Parabéns.\\
+	Vocês demonstraram atingiram o seu objetivo.
+	milton (Neutro): [i](ele se aproxima de um painel na parede)[/i]
+	milton (Explicando): Como prometido...\\
+	\\
+	[i](ele se aproxima de um painel na parede)[/i]
+	audio "res://Assets/beep_1.mp3"
+	[i](começa a digitar um código)[/i]
+	join lyra (Pensativo) center
+	lyra (Pensativo): Você sempre teve esse painel aí ou—
+	leave lyra
+	audio "res://Assets/scp-door-opening.mp3"
+	[i](a porta se abre lentamente)[/i]
+	join milton (Explicando) center
+	milton (Explicando): Acesso liberado.\\
+	Sigam para a próxima fase.
+	leave milton
+	join nestor (Surpreso) center
+	nestor (Surpreso): ...ok, isso foi meio dramático.
+	leave nestor
+	join arabella (Confusa) center
+	arabella (Pensativo): Então, né...\\
+	Bom, é melhor seguir em frente logo.
+	leave arabella
+	jump timeline_hard/
+milton (Neutro): Poxa... que pena.\\
+Vocês não atingiram a pontuação necessária para avançar.
+leave milton
+join arabella (Confusa) center
+arabella (Confusa): ...ah.\\\
+Sério?
+leave arabella
+join nestor (Surpreso) center
+nestor (Surpreso): Tá de brincadeira.
+leave nestor
+join lyra (Surpreso) center
+lyra (Surpreso): Então...\\\
+o que acontece agora?
+leave lyra
+[i](silêncio)[/i]
+join nestor (Preocupado) center
+nestor (Preocupado): ...Milton?
+leave nestor
+join milton (Neutro) center
+milton (Neutro): Agora... nós continuamos aqui.
+leave milton
+join arabella (Assustada) center
+arabella (Assustada): ...O QUE?¹
+leave arabella
+join milton (Explicando) center
+milton (Explicando): As regras foram claras.\\\
+Sem pontuação suficiente, a porta não será aberta.
+leave milton
+join nestor (Neutro) center
+nestor (Neutro): Tá, e quanto tempo isso dura?
+leave nestor
+join milton (Neutro) center
+milton (Neutro): ...indeterminado.
+leave milton
+[i](silêncio constrangedor)[/i]
+join lyra center
+lyra (Desconfortável): Poxa... se o Haco estivesse aqui...
