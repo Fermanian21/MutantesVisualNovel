@@ -19,8 +19,8 @@ const SETTING_DEFAULT_COLOR := 'dialogic/glossary/default_color'
 func _clear_state(_clear_flag := DialogicGameHandler.ClearFlags.FULL_CLEAR) -> void:
 	glossaries = []
 
-	for path: String in ProjectSettings.get_setting('dialogic/glossary/glossary_files', []):
-		add_glossary(path)
+	for path in ProjectSettings.get_setting('dialogic/glossary/glossary_files', []):
+		add_glossary(str(path))
 
 #endregion
 

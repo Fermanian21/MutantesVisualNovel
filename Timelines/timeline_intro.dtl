@@ -1,21 +1,23 @@
-[background arg="res://Assets/fundo arca estacao.png" fade="0.0"]
-O mundo… já não é mais como antes.
-As antigas cidades desapareceram…\
-e no lugar delas restaram apenas ruínas.
-Agora, os sobreviventes são [b]mutantes[/b]…\
-vivendo em uma comunidade chamada [b]Arca[/b].
-No centro da Arca, há uma figura essencial\: o [b]Ancião[/b].
-O único ainda completamente humano…\
-aquele que cuidou dos mutantes desde o início…\
-e que guarda os últimos fragmentos do mundo antigo.
-Lá fora… existe a [b]Zona[/b]. \
-Um lugar de descobertas…\
-e novos desafios.
-Entre aqueles que exploram esse mundo… estão três membros da [b]Gangue das Serpentes[/b]\:\
-Lyra…\
-Nestor…\
-Arabella…
-E agora… a pedido do Ancião…
-eles estão prestes a enfrentar\
-a missão mais importante de suas vidas...
-jump timeline_jogo/
+[background arg="res://Assets/backgrounds/fundo arca estacao.png" fade="0.0"]
+audio music "res://Assets/songs/Sea song.wav" [fade="1.0" loop="true"]
+[wave amp=20 freq=5]O mundo…[pause=0.5] já não é mais como antes.[/wave]
+[wave amp=20 freq=5]As antigas cidades desapareceram…[pause=0.5]\
+e no lugar delas restaram apenas ruínas.[/wave]
+[wave amp=20 freq=5]Agora, os sobreviventes são [b]mutantes[/b]…[pause=0.5]\
+vivendo em uma comunidade chamada [b]Arca[/b]...[pause=0.5]\
+localizada em uma antiga estação de petróleo em alto-mar...[/wave]
+[wave amp=20 freq=5]No centro da Arca, [pause=0.5]há uma figura essencial\: o [b]Ancião[/b].[/wave]
+[wave amp=20 freq=5]O único ainda completamente humano…[pause=0.5]\
+aquele que cuidou dos mutantes desde o início…[pause=0.5]\
+e que guarda os últimos fragmentos do mundo antigo.[/wave]
+[wave amp=20 freq=5]Lá fora…[pause=0.5] existe a [b]Zona[/b]. [pause=0.5]\
+Um lugar de descobertas…[pause=0.5]\
+e novos desafios.[/wave]
+[wave amp=20 freq=5]Entre aqueles que exploram esse mundo… [pause=0.5]estão três membros da [b]Gangue das Serpentes[/b]\:[pause=0.5]\
+Lyra…[pause=0.5]\
+Nestor…[pause=0.5]\
+Arabella…[/wave]
+[wave amp=20 freq=5]E agora… [pause=0.5]a pedido do Ancião…[/wave]
+[wave amp=20 freq=5]eles estão prestes a enfrentar...[pause=0.5]\
+a missão mais importante de suas vidas...[/wave]
+jump timeline_easy/

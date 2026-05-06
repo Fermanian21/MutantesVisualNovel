@@ -28,9 +28,9 @@ directories/dch_directory={
 "nestor": "res://Characters/nestor.dch"
 }
 directories/dtl_directory={
+"timeline_easy": "res://Timelines/timeline_easy.dtl",
 "timeline_hard": "res://Timelines/timeline_hard.dtl",
 "timeline_intro": "res://Timelines/timeline_intro.dtl",
-"timeline_jogo": "res://Timelines/timeline_easy.dtl",
 "timeline_moderate": "res://Timelines/timeline_moderate.dtl"
 }
 layout/style_directory={
@@ -74,8 +74,10 @@ layout/style_list=["res://Styles/visual_novel_style.tres"]
 layout/default_style="res://Styles/visual_novel_style.tres"
 variables={
 "answer": "a",
+"audioSeaOn": true,
 "points": 0
 }
+glossary/glossary_files=["res://Glossaries/glossary_mutant_year_zero.tres"]
 
 [editor_plugins]
 

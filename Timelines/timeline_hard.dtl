@@ -1,179 +1,226 @@
-[background fade="0.0"]
+[background arg="res://Assets/backgrounds/fundo arca 3.png" fade="0.0"]
+set {points} = 0
+audio music "res://Assets/songs/soundtrack_fase3.wav" [fade="1.0" loop="true"]
 join milton (Neutro) center
-milton (Neutro): Certo, agora chegamos na terceira e última fase.\
-Lembrando que, aqui, o nível de dificuldade é [b]Difícil[/b]
-milton (Explicando): As próximas questões serão sobre o
+milton (Neutro): Certo, [pause=0.3]agora chegamos na terceira e última fase.[pause=0.5]\
+Lembrando que, [pause=0.3]aqui,[pause=0.3] o nível de dificuldade é [b]Difícil[/b]
+milton (Explicando): As próximas questões serão sobre o [b]princípio da casa dos pombos[/b].[pause=0.3]\
+Também chamado de princípio das gavetas.
+milton (Neutro): Se mais objetos forem distribuídos do que espaços disponíveis...[pause=0.5]\
+Então,[pause=0.3] inevitavelmente...[pause=0.3] algum espaço conterá mais de um objeto.
+Não importa como tentem organizar,[pause=0.3] repetição ocorrerá.[pause=0.5]\
+\
+De forma geral\:[pause=0.3]\
+Ao distribuir n objetos em k espaços...[pause=0.3]\
+... ao menos um espaço conterá ⌈n/k⌉ objetos.
 leave milton
+join nestor (Pensativo) center
+nestor (Pensativo): Ok... [pause=0.5]faz sentido.
+leave nestor
 join lyra (Falando) center
-lyra (Falando): ...bom...\
-se a gente já chegou até aqui...\
+lyra (Falando): ...bom...[pause=0.5]\
+se a gente já chegou até aqui...[pause=0.3]\
 a gente consegue terminar.
 leave lyra
 join milton (Explicando) center
-milton (Explicando): Esse é o espírito!\
-Então, vamos começar...
+milton (Explicando): Esse é o espírito![pause=0.5]\
+Então, [pause=0.3]vamos começar...
 milton (Neutro): Primeira pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Na Arca existem 5 depósitos de água limpa.[pause=0.5]\
+Durante uma expedição, [pause=0.3]os mutantes trouxeram 16 garrafas e guardaram todas nesses depósitos.[pause=0.5]\
+\
+Qual é o menor número de garrafas que podemos garantir que haverá em pelo menos um depósito?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
+- A) 3
+	milton (Neutro): Resposta incorreta!
+- B) 5
+	milton (Neutro): Resposta incorreta!
+- C) 4
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- D) 6
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
 	join milton (Explicando) center
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+	milton (Explicando): Existem 16 garrafas e 5 depósitos.[pause=0.5]\
+	\
+	Dividindo\: 16 ÷ 5 = 3 e sobra.[pause=0.5]\
+	Isso significa que nem todos podem ter apenas 3.[pause=0.5]\
+	Então,[pause=0.3] pelo menos um depósito terá 4 garrafas.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]C) 4[/b]
 join milton (Neutro) center
 milton (Neutro): Segunda pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Um grupo encontrou 21 balas da Velha Era e decidiu dividir tudo entre 5 mutantes.[pause=0.5]\
+\
+Qual é o menor número de balas que podemos garantir que pelo menos um mutante recebeu?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+- A) 4
+	milton (Neutro): Resposta incorreta!
+- B) 5
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- C) 6
+	milton (Neutro): Resposta incorreta!
+- D) 3
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 21 balas e 5 mutantes.[pause=0.5]\
+	\
+	Dividindo\: 21 ÷ 5 = 4 e sobra.[pause=0.5]\
+	Então, [pause=0.3]nem todos podem ter só 4.[pause=0.5]\
+	Pelo menos um mutante terá 5 balas.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]B) 5[/b]
 join milton (Neutro) center
 milton (Neutro): Terceira pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Durante uma Assembleia, [pause=0.3]27 mutantes escolheram entre 7 projetos da Arca.[pause=0.5]\
+\
+Qual é o menor número de mutantes que podemos garantir que escolheram o mesmo projeto?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+- A) 5
+	milton (Neutro): Resposta incorreta!
+- B) 3
+	milton (Neutro): Resposta incorreta!
+- C) 6
+	milton (Neutro): Resposta incorreta!
+- D) 4
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 27 mutantes e 7 projetos.[pause=0.5]\
+	\
+	Dividindo\: 27 ÷ 7 = 3 e sobra.[pause=0.5]\
+	Então, [pause=0.3]nem todos podem ter só 3 mutantes.[pause=0.5]\
+	Pelo menos um projeto terá 4 mutantes.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]D) 4[/b]
 join milton (Neutro) center
 milton (Neutro): Quarta pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Um grupo encontrou 19 artefatos na Zona e os separou em 4 caixas.[pause=0.5]\
+\
+Qual é o menor número de artefatos que podemos garantir que existe em pelo menos uma caixa?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+- A) 6
+	milton (Neutro): Resposta incorreta!
+- B) 4
+	milton (Neutro): Resposta incorreta!
+- C) 5
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- D) 3
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 19 artefatos e 4 caixas.[pause=0.5]\
+	\
+	Dividindo\: 19 ÷ 4 = 4 e sobra.[pause=0.5]\
+	Então, [pause=0.3]nem todas podem ter só 4.[pause=0.5]\
+	Pelo menos uma caixa terá 5 artefatos.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]C) 5[/b]
 join milton (Neutro) center
 milton (Neutro): Quinta pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Durante uma tempestade de Podridão, [pause=0.3]39 mutantes correram para se esconder em 6 abrigos.[pause=0.5]\
+\
+Qual é o menor número de mutantes que podemos garantir que existe em pelo menos um abrigo?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
-milton (Neutro): Fim das perguntas!\\
-\\
+- A) 7
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- B) 6
+	milton (Neutro): Resposta incorreta!
+- C) 8
+	milton (Neutro): Resposta incorreta!
+- D) 5
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 39 mutantes e 6 abrigos.[pause=0.5]\
+	\
+	Dividindo\: 39 ÷ 6 = 6 e sobra.[pause=0.5]\
+	Então, [pause=0.3]nem todos podem ter só 6.[pause=0.5]\
+	Pelo menos um abrigo terá 7 mutantes.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]A) 7[/b]
+join milton (Neutro) center
+milton (Neutro): Fim das perguntas![pause=0.5]\
+\
 A pontuação de vocês foi...
 milton (Explicando): {points}/5
 if {points} >= 3:
-	milton (Neutro): Parabéns!\\
-	Vocês atingiram a pontuação necessária.
+	milton (Neutro): Parabéns![pause=0.5]\
+	Vocês concluíram o teste.
 	leave milton
-	join lyra (Falando) center
-	lyra (Falando): SÉRIO?! Ainda bem!
+	join lyra (Pensativo) center
+	lyra (Pensativo): Então... [pause=0.5]isso era o teste?
 	leave lyra
-	join arabella (Pensativo) center
-	arabella (Pensativo): ...até que não foi tão ruim.
-	leave 
+	join milton (Explicando) center
+	milton (Explicando): Chamam isso de “quiz”.[pause=0.5]\
+	Era exatamente o que vocês estavam fazendo.
+	leave milton
 	join nestor (Neutro) center
-	nestor (Neutro): Que bom... achei que a gente não ia conseguir.
+	nestor (Neutro): ...isso não fez o menor sentido.
 	leave nestor
 	join milton (Neutro) center
-	milton (Explicando): Parabéns.\\
-	Vocês demonstraram atingiram o seu objetivo.
-	milton (Neutro): [i](ele se aproxima de um painel na parede)[/i]
-	milton (Explicando): Como prometido...\\
-	\\
-	[i](ele se aproxima de um painel na parede)[/i]
-	audio "res://Assets/beep_1.mp3"
+	milton (Neutro): Ainda assim,[pause=0.3] espero que tenham aprendido algo.
+	[i](caminha até a porta)[/i]
+	audio "res://Assets/songs/beep_1.mp3"
 	[i](começa a digitar um código)[/i]
-	join lyra (Pensativo) center
-	lyra (Pensativo): Você sempre teve esse painel aí ou—
-	leave lyra
-	audio "res://Assets/scp-door-opening.mp3"
+	audio "res://Assets/songs/scp-door-opening.mp3"
 	[i](a porta se abre lentamente)[/i]
-	join milton (Explicando) center
-	milton (Explicando): Acesso liberado.\\
-	Sigam para a próxima fase.
+	milton (Explicando): Classe liberada.
 	leave milton
-	join nestor (Surpreso) center
-	nestor (Surpreso): ...ok, isso foi meio dramático.
-	leave nestor
-	join arabella (Confusa) center
-	arabella (Pensativo): Então, né...\\
-	Bom, é melhor seguir em frente logo.
+	join arabella (Pensativo) center
+	arabella (Pensativo): ...“classe”?
+	[i](vira-se para a porta)[/i]
+	arabella (Confusa): Tá.[pause=0.5]\
+	Eu nem vou perguntar.
+	audio music "res://Assets/songs/562195__gristi__snd_footsteps_metal_floor_inside.wav"
 	leave arabella
 	jump timeline_hard/
-milton (Neutro): Poxa... que pena.\\
+milton (Neutro): ...que pena.[pause=0.5]\
 Vocês não atingiram a pontuação necessária para avançar.
 leave milton
 join arabella (Confusa) center
-arabella (Confusa): ...ah.\\\
+arabella (Confusa): ...ah.[pause=0.5]\
 Sério?
 leave arabella
-join nestor (Surpreso) center
-nestor (Surpreso): Tá de brincadeira.
+join nestor (Raiva) center
+nestor (Raiva): Tá de brincadeira.
 leave nestor
 join lyra (Surpreso) center
-lyra (Surpreso): Então...\\\
+lyra (Surpreso): Então...[pause=0.5]\
 o que acontece agora?
+audio music "res://Assets/songs/23130__acclivity__silence.wav"
 leave lyra
 [i](silêncio)[/i]
-join nestor (Preocupado) center
-nestor (Preocupado): ...Milton?
+join nestor (Pensativo) center
+nestor (Pensativo): ...Milton?
 leave nestor
 join milton (Neutro) center
-milton (Neutro): Agora... nós continuamos aqui.
+milton (Neutro): Agora... [pause=0.5]nós continuamos aqui.
 leave milton
 join arabella (Assustada) center
-arabella (Assustada): ...O QUE?¹
+arabella (Assustada): [font_size=30]...O QUE?![/font_size]
 leave arabella
 join milton (Explicando) center
-milton (Explicando): As regras foram claras.\\\
-Sem pontuação suficiente, a porta não será aberta.
+milton (Explicando): As regras foram claras.[pause=0.5]\
+Sem pontuação suficiente,[pause=0.3] a porta não será aberta.
 leave milton
 join nestor (Neutro) center
-nestor (Neutro): Tá, e quanto tempo isso dura?
+nestor (Neutro): Tá,[pause=0.3] e quanto tempo isso dura?
 leave nestor
 join milton (Neutro) center
 milton (Neutro): ...indeterminado.
 leave milton
 [i](silêncio constrangedor)[/i]
-join lyra center
-lyra (Desconfortável): Poxa... se o Haco estivesse aqui...
+join lyra (Desconfortável) center
+lyra (Desconfortável): Poxa... [pause=0.5]se o Haco estivesse aqui...

@@ -1,175 +1,232 @@
-[background fade="0.0"]
+[background arg="res://Assets/backgrounds/fundo arca 2.jpeg" fade="0.0"]
+audio music "res://Assets/songs/soundtrack_fase2.wav" [fade="1.0" loop="true"]
+set {points} = 0
 join milton (Neutro) center
-milton (Neutro): Muito bem, agora estamos na segunda fase.\
-Lembrando que, aqui, o nível de dificuldade é [b]Médio[/b]
-milton (Explicando): As próximas questões serão sobre o
+milton (Neutro): Muito bem,[pause=0.3] agora estamos na segunda fase.[pause=0.5]\
+Lembrando que, aqui, [pause=0.3]o nível de dificuldade é [b]Médio[/b]
+milton (Explicando): As próximas questões serão sobre o [b]princípio multiplicativo[/b].[pause=0.3]\
+Também chamado de princípio do produto.
+milton (Neutro): Aqui, [pause=0.3]o raciocínio muda...[pause=0.5] vocês não estão mais escolhendo entre opções.[pause=0.5]\
+Estão combinando etapas.
+milton (Explicando): Por exemplo... [pause=0.5]se uma etapa pode ocorrer de A maneiras...[pause=0.3]\
+e a seguinte, de B maneiras...[pause=0.3]\
+\
+O total de possibilidades será\:[pause=0.3]\
+A × B.
+milton (Neutro): Cada escolha inicial se combina com todas as seguintes... [pause=0.3]simples.[pause=0.5]\
+Desde que não confundam com soma.
 leave milton
-join arabella center
-arabella (Pensativo): Certo...
+join arabella (Pensativo) center
+arabella (Pensativo): Certo... [pause=0.5]acho que entendi.
 leave arabella
-join milton (Neutro) center
+join milton (Explicando) center
+milton (Explicando): Ótimo![pause=0.5]\
+Então vamos começar...
 milton (Neutro): Primeira pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Um mutante vai escolher\:[pause=0.3]\
+• 1 arma entre 4 opções[pause=0.3]\
+• 1 ferramenta entre 3 opções[pause=0.5]\
+\
+Quantas combinações diferentes ele pode formar?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
+- A) 7
+	milton (Neutro): Resposta incorreta!
+- B) 12
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- C) 9
+	milton (Neutro): Resposta incorreta!
+- D) 24
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
 	join milton (Explicando) center
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+	milton (Explicando): Existem 4 opções de arma e 3 de ferramenta.[pause=0.5]\
+	Para cada arma, [pause=0.3]podemos escolher 3 ferramentas.[pause=0.5]\
+	\
+	Então multiplicamos\:[pause=0.3]\
+	4 × 3 = 12.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]B) 12[/b].
 join milton (Neutro) center
 milton (Neutro): Segunda pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Para explorar a Zona, [pause=0.3]o grupo pode escolher\:[pause=0.3]\
+• 5 rotas[pause=0.3]\
+• 2 abrigos para descansar[pause=0.5]\
+\
+Quantos planos diferentes de viagem existem?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+- A) 10
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- B) 7
+	milton (Neutro): Resposta incorreta!
+- C) 15
+	milton (Neutro): Resposta incorreta!
+- D) 12
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 5 rotas e 2 abrigos.[pause=0.3]\
+	Para cada rota,[pause=0.3] há 2 escolhas de abrigo.[pause=0.5]\
+	\
+	Então multiplicamos\:[pause=0.3]\
+	5 × 2 = 10.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]A) 10[/b].
 join milton (Neutro) center
 milton (Neutro): Terceira pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Na Assembleia, [pause=0.3]o Povo pode escolher\:[pause=0.3]\
+• 3 projetos da Arca[pause=0.3]\
+• 5 líderes para comandar[pause=0.5]\
+\
+Quantas escolhas diferentes de projeto com líder existem?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+- A) 20
+	milton (Neutro): Resposta incorreta!
+- B) 10
+	milton (Neutro): Resposta incorreta!
+- C) 8
+	milton (Neutro): Resposta incorreta!
+- D) 15
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 3 projetos e 5 líderes.[pause=0.3]\
+	Para cada projeto, [pause=0.3]há 5 escolhas de líder.[pause=0.5]\
+	\
+	Então multiplicamos\:[pause=0.3]\
+	3 × 5 = 15.
+	milton (Neutro): Portanto,[pause=0.3] a alternativa correta era [b]D) 15[/b].
 join milton (Neutro) center
 milton (Neutro): Quarta pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Um Batedor pode escolher\:[pause=0.3]\
+• 3 armas antigas[pause=0.3]\
+• 5 tipos de munição compatíveis[pause=0.5]\
+\
+Quantas combinações de arma e munição existem?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
+- A) 15
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- B) 8
+	milton (Neutro): Resposta incorreta!
+- C) 10
+	milton (Neutro): Resposta incorreta!
+- D) 20
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 3 armas e 5 tipos de munição.[pause=0.3]\
+	Para cada arma,[pause=0.3] há 5 munições possíveis.[pause=0.5]\
+	\
+	Então multiplicamos\:[pause=0.3]\
+	3 × 5 = 15.
+	milton (Neutro): Portanto,[pause=0.3] a alternativa correta era [b]A) 15[/b].
 join milton (Neutro) center
 milton (Neutro): Quinta pergunta\:
-milton (Explicando): <Empty Text Event>
+milton (Explicando): Um Engenhoqueiro encontrou\:[pause=0.3]\
+• 4 artefatos quebrados[pause=0.3]\
+• e tem 6 métodos de conserto[pause=0.5]\
+\
+Quantas tentativas diferentes ele pode fazer?
 leave milton
 set {answer} = false
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-- 
-	<Empty Text Event>
-if {} != true:
-	milton (Explicando): <Empty Text Event>
-	milton (Neutro): <Empty Text Event>
-	milton (Explicando): <Empty Text Event>
-milton (Neutro): Fim das perguntas!\
-\
+- A) 12
+	milton (Neutro): Resposta incorreta!
+- B) 24
+	set {answer} = true
+	set {points} += 1
+	milton (Neutro): Resposta correta!
+- C) 20
+	milton (Neutro): Resposta incorreta!
+- D) 10
+	milton (Neutro): Resposta incorreta!
+if {answer} != true:
+	join milton (Explicando) center
+	milton (Explicando): Existem 4 artefatos e 6 métodos de conserto.[pause=0.3]\
+	Para cada artefato, [pause=0.3]há 6 métodos possíveis.[pause=0.5]\
+	\
+	Então multiplicamos\:[pause=0.3]\
+	4 × 6 = 24.
+	milton (Neutro): Portanto, [pause=0.3]a alternativa correta era [b]B) 24[/b].
+join milton (Neutro) center
+milton (Neutro): Fim das perguntas![pause=0.5]\
 A pontuação de vocês foi...
 milton (Explicando): {points}/5
 if {points} >= 3:
-	milton (Neutro): Parabéns!\
-	Vocês atingiram a pontuação necessária.
+	milton (Neutro): Parabéns![pause=0.5]\
+	Vocês atingiram a pontuação necessária, novamente.
 	leave milton
-	join lyra (Falando) center
-	lyra (Falando): SÉRIO?! Ainda bem!
-	leave lyra
-	join arabella (Pensativo) center
-	arabella (Pensativo): ...até que não foi tão ruim.
-	leave 
 	join nestor (Neutro) center
-	nestor (Neutro): Que bom... achei que a gente não ia conseguir.
+	nestor (Neutro): Boa...[pause=0.5] a gente conseguiu.
 	leave nestor
-	join milton (Neutro) center
-	milton (Explicando): Parabéns.\
-	Vocês demonstraram atingiram o seu objetivo.
-	milton (Neutro): [i](ele se aproxima de um painel na parede)[/i]
-	milton (Explicando): Como prometido...\
-	\
+	join milton (Explicando) center
+	milton (Explicando): Continuem assim e nós sairemos daqui em um piscar de olhos.
 	[i](ele se aproxima de um painel na parede)[/i]
-	audio "res://Assets/beep_1.mp3"
+	milton (Neutro): Vamos para a próxima sala,[pause=0.3] então...[pause=0.5]
+	audio "res://Assets/songs/beep_1.mp3"
 	[i](começa a digitar um código)[/i]
-	join lyra (Pensativo) center
-	lyra (Pensativo): Você sempre teve esse painel aí ou—
+	leave milton
+	join arabella (Confusa) center
+	[i](se aproxima da Lyra)[/i]
+	arabella (Confusa): Você não acha isso tudo mega performático?
+	leave arabella
+	join lyra (Neutro) center
+	lyra (Neutro): ...ah, [pause=0.3]apesar das circunstâncias estranhas, [pause=0.3]eu até que tô gostando.
 	leave lyra
-	audio "res://Assets/scp-door-opening.mp3"
+	audio "res://Assets/songs/scp-door-opening.mp3"
 	[i](a porta se abre lentamente)[/i]
 	join milton (Explicando) center
-	milton (Explicando): Acesso liberado.\
+	milton (Explicando): Acesso liberado.[pause=0.5]\
 	Sigam para a próxima fase.
 	leave milton
-	join nestor (Surpreso) center
-	nestor (Surpreso): ...ok, isso foi meio dramático.
+	join nestor (Neutro) center
+	nestor (Neutro): Lá vamos nós.
+	audio music "res://Assets/songs/562195__gristi__snd_footsteps_metal_floor_inside.wav"
 	leave nestor
-	join arabella (Confusa) center
-	arabella (Pensativo): Então, né...\
-	Bom, é melhor seguir em frente logo.
-	leave arabella
 	jump timeline_hard/
-milton (Neutro): Poxa... que pena.\
+milton (Neutro): ...que pena.[pause=0.5]\
 Vocês não atingiram a pontuação necessária para avançar.
 leave milton
 join arabella (Confusa) center
-arabella (Confusa): ...ah.\\
+arabella (Confusa): ...ah.[pause=0.5]\
 Sério?
 leave arabella
-join nestor (Surpreso) center
-nestor (Surpreso): Tá de brincadeira.
+join nestor (Raiva) center
+nestor (Raiva): Tá de brincadeira.
 leave nestor
 join lyra (Surpreso) center
-lyra (Surpreso): Então...\\
+lyra (Surpreso): Então...[pause=0.5]\
 o que acontece agora?
 leave lyra
+audio music "res://Assets/songs/23130__acclivity__silence.wav"
 [i](silêncio)[/i]
-join nestor (Preocupado) center
-nestor (Preocupado): ...Milton?
+join nestor (Pensativo) center
+nestor (Pensativo): ...Milton?
 leave nestor
 join milton (Neutro) center
-milton (Neutro): Agora... nós continuamos aqui.
+milton (Neutro): Agora...[pause=0.5] nós continuamos aqui.
 leave milton
 join arabella (Assustada) center
-arabella (Assustada): ...O QUE?¹
+arabella (Assustada): [font_size=30]...O QUE?[/font_size]
 leave arabella
 join milton (Explicando) center
-milton (Explicando): As regras foram claras.\\
-Sem pontuação suficiente, a porta não será aberta.
+milton (Explicando): As regras foram claras.[pause=0.5]\
+Sem pontuação suficiente, [pause=0.3]a porta não será aberta.
 leave milton
 join nestor (Neutro) center
-nestor (Neutro): Tá, e quanto tempo isso dura?
+nestor (Neutro): Tá, [pause=0.3]e quanto tempo isso dura?
 leave nestor
 join milton (Neutro) center
 milton (Neutro): ...indeterminado.
 leave milton
 [i](silêncio constrangedor)[/i]
-join lyra center
-lyra (Desconfortável): Poxa... se o Haco estivesse aqui...
+join lyra (Desconfortável) center
+lyra (Desconfortável): Poxa...[pause=0.5] se o Haco estivesse aqui...

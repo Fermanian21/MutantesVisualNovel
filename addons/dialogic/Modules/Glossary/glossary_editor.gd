@@ -63,20 +63,28 @@ func _open(_argument: Variant = null) -> void:
 
 	%GlossaryList.clear()
 	var idx := 0
-	for file: String in ProjectSettings.get_setting('dialogic/glossary/glossary_files', []):
-		## TODO REMOVE WHEN DROPPING 4.4 support
-		var path := ""
-		if Engine.get_version_info().hex >= 0x040500:
-			path = ResourceUID.call("uid_to_path", file) if file.begins_with("uid:") else file
-		else:
+	for file in ProjectSettings.get_setting('dialogic/glossary/glossary_files', []):
+		# 1. Padronizamos o caminho/UID para String
+		var path: String = ""
+		
+		if typeof(file) == TYPE_INT:
+			path = ResourceUID.id_to_text(file)
+		elif typeof(file) == TYPE_STRING:
 			path = file
+		
+		# 2. Se for um UID (uid://...), resolvemos para um caminho de arquivo real (res://...)
+		var actual_file_path := path
+		if path.begins_with("uid://"):
+			actual_file_path = ResourceUID.get_id_path(ResourceUID.text_to_id(path))
 
-		if ResourceLoader.exists(path):
-			%GlossaryList.add_item(DialogicUtil.pretty_name(path), get_theme_icon('FileList', 'EditorIcons'))
+		# 3. Verificamos se o arquivo existe e adicionamos na lista
+		if ResourceLoader.exists(actual_file_path):
+			%GlossaryList.add_item(DialogicUtil.pretty_name(actual_file_path), get_theme_icon('FileList', 'EditorIcons'))
 		else:
-			%GlossaryList.add_item(DialogicUtil.pretty_name(path), get_theme_icon('FileDead', 'EditorIcons'))
+			%GlossaryList.add_item(DialogicUtil.pretty_name(actual_file_path), get_theme_icon('FileDead', 'EditorIcons'))
 
-		%GlossaryList.set_item_tooltip(idx, path)
+		# 4. Configuramos o tooltip e o índice
+		%GlossaryList.set_item_tooltip(idx, actual_file_path)
 		idx += 1
 
 	%EntryList.clear()
@@ -161,11 +169,16 @@ func load_glossary_file(file:String) -> void:
 	var list: Array = ProjectSettings.get_setting('dialogic/glossary/glossary_files', [])
 
 	if not file in list:
-		## TODO REMOVE WHEN DROPPING 4.4 support
 		var path := ""
+		# Para Godot 4.3 ou superior
 		if Engine.get_version_info().hex >= 0x040300:
-			path = ResourceUID.call("uid_to_path", file) if file.begins_with("uid:") else file
-			list.append(ResourceUID.call("path_to_uid",path))
+			path = ResourceUID.id_to_text(ResourceUID.text_to_id(file)) if file.begins_with("uid://") else file
+			
+			# Se for um caminho, pegamos o UID numérico e adicionamos na lista
+			if not file.begins_with("uid://"):
+				list.append(ResourceLoader.get_resource_uid(path))
+			else:
+				list.append(ResourceUID.text_to_id(file))
 		else:
 			path = file
 			list.append(path)

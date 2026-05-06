@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" load_steps=2 format=3 uid="uid://doou7ur0uecgx"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_wejhs"]
+
+[resource]
+script = ExtResource("1_wejhs")
+entries = {
+"Assembleia": {
+"name": "Assembleia",
+"text": "A Assembleia é o coração da política e da sobrevivência na Arca. Ela representa o momento em que os mutantes se reúnem para discutir o futuro do seu lar, resolver conflitos e decidir quais projetos desenvolver."
+},
+"Batedor": {
+"case_sensitive": true,
+"name": "Batedor",
+"text": "Os Batedores são indivíduos especializados na exploração da \"Zona\" — o mundo exterior devastado e perigoso fora da Arca.",
+"title": "Batedor"
+},
+"Engenhoqueiro": {
+"name": "Engenhoqueiro",
+"text": "Os Engenhoqueiros são especialistas em tecnologia, mecânica e na arte de criar algo útil a partir de lixo e sucata."
+},
+"Haco": {
+"name": "Haco",
+"text": "Outro membro da Gangue das Serpentes... ele é forte."
+},
+"Podridão": {
+"name": "Podridão",
+"text": "A Podridão é uma forma de radiação extrema e contaminação tóxica que permeia o deserto pós-apocalíptico, conhecido como a Zona."
+}
+}
+enabled = true
+_translation_id = ""
+_translation_keys = {}
