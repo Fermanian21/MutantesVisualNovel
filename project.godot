@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Mutantes Escape Room"
-run/main_scene="res://Scenes/main.tscn"
+run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -32,7 +32,6 @@ directories/dtl_directory={
 "timeline_easy": "res://Timelines/timeline_easy.dtl",
 "timeline_hard": "res://Timelines/timeline_hard.dtl",
 "timeline_intro": "res://Timelines/timeline_intro.dtl",
-"timeline_menu": "res://Timelines/timeline_menu.dtl",
 "timeline_moderate": "res://Timelines/timeline_moderate.dtl"
 }
 layout/style_directory={
