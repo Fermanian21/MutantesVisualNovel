@@ -1,5 +1,6 @@
 [background arg="res://Assets/backgrounds/fundo preto arca.png" fade="0.0"]
 audio music "res://Assets/songs/freesound_community-dark-cold-frightening-ambience-51421.mp3" [fade="1.0" loop="true"]
+set {points} = 0
 nestor: ...ugh...[pause=0.5]\
 Minha cabeça...
 nestor: Espera... [pause=0.5]onde é que eu tô?
@@ -304,4 +305,5 @@ leave milton
 [i](silêncio constrangedor)[/i]
 join lyra (Desconfortável) center
 lyra (Desconfortável): Poxa... [pause=0.5]se o Haco estivesse aqui...
-[signal arg="sair_inicial"]
+leave lyra
+jump timeline_menu/

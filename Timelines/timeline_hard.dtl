@@ -185,7 +185,7 @@ if {points} >= 3:
 	Eu nem vou perguntar.
 	audio music "res://Assets/songs/562195__gristi__snd_footsteps_metal_floor_inside.wav"
 	leave arabella
-	jump timeline_hard/
+	jump timeline_menu/
 milton (Neutro): ...que pena.[pause=0.5]\
 Vocês não atingiram a pontuação necessária para avançar.
 leave milton
@@ -203,7 +203,7 @@ audio music "res://Assets/songs/23130__acclivity__silence.wav"
 leave lyra
 [i](silêncio)[/i]
 join nestor (Pensativo) center
-nestor (Pensativo): ...Milton?
+nestor (Pensativo): ...Miltom?
 leave nestor
 join milton (Neutro) center
 milton (Neutro): Agora... [pause=0.5]nós continuamos aqui.
@@ -224,4 +224,5 @@ leave milton
 [i](silêncio constrangedor)[/i]
 join lyra (Desconfortável) center
 lyra (Desconfortável): Poxa... [pause=0.5]se o Haco estivesse aqui...
-do Global.sair()
+leave lyra
+jump timeline_menu/

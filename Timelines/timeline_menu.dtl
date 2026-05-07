@@ -1,0 +1,4 @@
+[background arg="res://Assets/backgrounds/backgroundMainMenu.jpg" fade="0.0"]
+[font_size=30]Mutantes[/font_size]
+- Jogar
+	jump timeline_intro/

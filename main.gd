@@ -1,4 +1,5 @@
 extends Node2D
 
-func _ready() -> void:
-	Dialogic.start("res://Timelines/timeline_intro.dtl")
+func _ready():
+	var timeline = Dialogic.start("res://Timelines/timeline_menu.dtl")
+	add_child(timeline)

@@ -230,4 +230,5 @@ leave milton
 [i](silêncio constrangedor)[/i]
 join lyra (Desconfortável) center
 lyra (Desconfortável): Poxa...[pause=0.5] se o Haco estivesse aqui...
-do Global.sair()
+leave lyra
+jump timeline_menu/
