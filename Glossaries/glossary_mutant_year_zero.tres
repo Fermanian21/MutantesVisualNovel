@@ -6,6 +6,7 @@
 script = ExtResource("1_wejhs")
 entries = {
 "Assembleia": {
+"case_sensitive": true,
 "name": "Assembleia",
 "text": "A Assembleia é o coração da política e da sobrevivência na Arca. Ela representa o momento em que os mutantes se reúnem para discutir o futuro do seu lar, resolver conflitos e decidir quais projetos desenvolver."
 },
