@@ -80,6 +80,10 @@ variables={
 }
 glossary/glossary_files=["res://Glossaries/glossary_mutant_year_zero.tres"]
 
+[display]
+
+window/size/resizable=false
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
