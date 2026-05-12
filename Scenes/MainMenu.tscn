@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_odd7p"]
 [ext_resource type="Texture2D" uid="uid://bge6h2dfsyq7t" path="res://Assets/backgrounds/backgroundMainMenu.jpg" id="1_yjrlv"]
-[ext_resource type="FontFile" uid="uid://dvn8c1jliwqe" path="res://Assets/fonts/DESTROY_.TTF" id="3_jk15c"]
+[ext_resource type="FontFile" uid="uid://dvn8c1jliwqe" path="res://Assets/fonts/DESTROY_.TTF" id="3_88cee"]
 [ext_resource type="FontFile" uid="uid://d3rba0v30l6hw" path="res://Assets/fonts/Teko-Light.ttf" id="4_8jwju"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tvag1"]
 texture = ExtResource("1_yjrlv")
+modulate_color = Color(0.556953, 0.556953, 0.556953, 1)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -29,27 +30,19 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_tvag1")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 9
-anchor_bottom = 1.0
-offset_right = 411.0
-grow_vertical = 2
-color = Color(0, 0, 0, 0.517647)
-
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 5.0
-offset_top = -224.0
-offset_right = 413.0
-offset_bottom = -128.0
+offset_left = 80.0
+offset_top = -235.5
+offset_right = 711.0
+offset_bottom = -116.5
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.85098, 0.466667, 0.0235294, 1)
-theme_override_fonts/font = ExtResource("3_jk15c")
-theme_override_font_sizes/font_size = 52
+theme_override_fonts/font = ExtResource("3_88cee")
+theme_override_font_sizes/font_size = 100
 text = "Mutantes"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -79,9 +72,9 @@ z_index = 1
 texture_filter = 1
 texture_repeat = 1
 layout_mode = 2
-theme_override_colors/font_hover_color = Color(0.560784, 0.74902, 0.8, 1)
+theme_override_colors/font_hover_color = Color(0.85098, 0.466667, 0.0235294, 1)
 theme_override_fonts/font = ExtResource("4_8jwju")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Começar"
 flat = true
 expand_icon = true
@@ -90,19 +83,21 @@ expand_icon = true
 texture_filter = 1
 texture_repeat = 1
 layout_mode = 2
-theme_override_colors/font_hover_color = Color(0.560784, 0.74902, 0.8, 1)
+theme_override_colors/font_hover_color = Color(0.85098, 0.466667, 0.0235294, 1)
 theme_override_fonts/font = ExtResource("4_8jwju")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Opções"
 flat = true
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_hover_color = Color(0.560784, 0.74902, 0.8, 1)
+theme_override_colors/font_hover_color = Color(0.85098, 0.466667, 0.0235294, 1)
 theme_override_fonts/font = ExtResource("4_8jwju")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Sair
 "
 flat = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
