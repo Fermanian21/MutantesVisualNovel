@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_odd7p"]
 [ext_resource type="Texture2D" uid="uid://bge6h2dfsyq7t" path="res://Assets/backgrounds/backgroundMainMenu.jpg" id="1_yjrlv"]
-[ext_resource type="FontFile" uid="uid://dvn8c1jliwqe" path="res://Assets/fonts/DESTROY_.TTF" id="3_88cee"]
+[ext_resource type="FontFile" uid="uid://bxn8tt2qd6051" path="res://Assets/fonts/Dirty Harry.ttf" id="3_wdqva"]
 [ext_resource type="FontFile" uid="uid://d3rba0v30l6hw" path="res://Assets/fonts/Teko-Light.ttf" id="4_8jwju"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tvag1"]
@@ -35,13 +35,13 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 80.0
+offset_left = 60.0
 offset_top = -235.5
-offset_right = 711.0
+offset_right = 819.0
 offset_bottom = -116.5
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.85098, 0.466667, 0.0235294, 1)
-theme_override_fonts/font = ExtResource("3_88cee")
+theme_override_fonts/font = ExtResource("3_wdqva")
 theme_override_font_sizes/font_size = 100
 text = "Mutantes"
 horizontal_alignment = 1
@@ -59,9 +59,9 @@ anchor_left = 0.183
 anchor_top = 0.546
 anchor_right = 0.183
 anchor_bottom = 0.546
-offset_left = -110.816
+offset_left = -130.816
 offset_top = -103.808
-offset_right = 0.184006
+offset_right = -19.816
 offset_bottom = 30.192
 grow_vertical = 2
 scale = Vector2(2, 2)
@@ -77,6 +77,7 @@ theme_override_fonts/font = ExtResource("4_8jwju")
 theme_override_font_sizes/font_size = 28
 text = "Começar"
 flat = true
+alignment = 0
 expand_icon = true
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
@@ -88,6 +89,7 @@ theme_override_fonts/font = ExtResource("4_8jwju")
 theme_override_font_sizes/font_size = 28
 text = "Opções"
 flat = true
+alignment = 0
 
 [node name="ExitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -97,6 +99,7 @@ theme_override_font_sizes/font_size = 28
 text = "Sair
 "
 flat = true
+alignment = 0
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
